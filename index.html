@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>MacBook Pro</title>
+</head>
+
+<body class="w-3/4 mx-auto mt-20">
+    <section>
+        <div class="grid grid-cols-2 -mb-80">
+            <div><img class="w-3/4 " src="images/mac.png" alt=""></div>
+            <div class="grid grid-rows-2">
+                <div>
+                    <h1 class="font-bold text-4xl mb-5">Customize your gray 24-inch iMac with Apple M1 chip.</h1>
+                    <p class="mb-10">M1 integrates the processor, graphics, memory, and more onto a single chip. That
+                        let
+                        us put an
+                        entire computer into a space so small it practically disappears.</p>
+                    <div class="mb-10">
+                        <h5 class="font-semibold mb-2">Memory</h5>
+                        <button id="8gb-memory" class="focus:ring-2 focus:ring-red-500 bg-gray-400 rounded p-2 mr-2">8GB
+                            unified
+                            memory</button><button id="16gb-memory"
+                            class="focus:ring-2 focus:ring-red-500 bg-gray-400 rounded p-2 mr-2">16GB
+                            unified memory</button>
+                    </div>
+                    <div class="mb-10">
+                        <h5 class="font-semibold mb-2">Storage</h5>
+                        <button id="256gb-storage"
+                            class="focus:ring-2 focus:ring-red-500 bg-gray-400 rounded p-2 mr-2">256GB SSD
+                            Storage</button><button id="512gb-storage"
+                            class="focus:ring-2 focus:ring-red-500 bg-gray-400 rounded p-2 mr-2">512GB SSD
+                            Storage</button>
+                        </button> <button id="1024gb-storage"
+                            class="focus:ring-2 focus:ring-red-500 bg-gray-400 rounded p-2 mr-2">1TB SSD
+                            Storage</button>
+                    </div>
+                    <div class="mb-10">
+                        <h5 class="font-semibold mb-2">Choose your delivery option</h5>
+                        <button id="free-delivery"
+                            class="focus:ring-2 focus:ring-red-500 bg-gray-400 rounded p-2 mr-2">Friday, Aug 25 Free
+                            prime delivery</button><button id="charged-delivery"
+                            class="focus:ring-2 focus:ring-red-500 bg-gray-400 rounded p-2 mr-2">Friday, Aug 21 Delivery
+                            charge $20</button>
+                    </div>
+
+
+                </div>
+                <div class="grid grid-cols-2">
+                    <div class="grid grid-cols-2">
+                        <div class="mb-0">
+                            <h5 class="font-semibold mb-2">Best Price</h5>
+                            <hr>
+                            <h5 class="font-semibold mb-2">Extra Memory Cost</h5>
+                            <hr>
+                            <h5 class="font-semibold mb-2">Extra Storage Cost</h5>
+                            <hr>
+                            <h5 class="font-semibold mb-2">Delivery charge</h5>
+                            <hr>
+                            <h5 class="font-semibold mb-2">Total Price</h5>
+                        </div>
+                        <div class="mx-auto">
+                            <h5 class="font-semibold mb-2">$<span id="best-price">1299</span></h5>
+                            <hr>
+                            <h5 class="font-semibold mb-2">$<span id="memory-cost">0</span></h5>
+                            <hr>
+                            <h5 class="font-semibold mb-2">$<span id="storage-cost">0</span></h5>
+                            <hr>
+                            <h5 class="font-semibold mb-2">$<span id="delivery-cost">0</span></h5>
+                            <hr>
+                            <h5 class="font-semibold mb-2">$<span id="total-cost">1299</span></h5>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p class="font-semibold mb-2">Add Promo code</p>
+                        <input class="border-2 mb-2" type="text" name="" id="promo-input">
+                        <button id="promo-btn"
+                            class="focus:ring-2 focus:ring-red-500 bg-gray-400 rounded p-2 mr-2">Apply</button>
+                        <!-- <p id="valid" class="valid">promo applied</p> -->
+                        <!-- <p id="not-valid" class="valid">promo code is not valid</p> -->
+                    </div>
+                    <div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="">
+            <h1 class="font-bold text-4xl mb-5 text-center">Total: $<span id="total">1299</span></h1>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
